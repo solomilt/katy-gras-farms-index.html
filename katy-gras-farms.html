@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Katy Gras Farms — Fresh-cut sod delivered and installed across the Houston area. Same-day service available. St. Augustine, Zoysia, and more. Call (346) 526-8963." />
+<title>Katy Gras Farms — Fresh-cut sod, delivered fast. Houston, TX.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          sans: ['Instrument Sans', 'system-ui', 'sans-serif'],
+          serif: ['Instrument Serif', 'serif'],
+        },
+        colors: {
+          ink: '#0d2a1f',
+          forest: '#1f4d3a',
+          sage: '#84a98c',
+          moss: '#3a6b54',
+          cream: '#f5f1e8',
+          parchment: '#ebe5d4',
+          copper: '#a86932',
+          ember: '#c97f3a',
+          char: '#1a1a1a',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    background: #f5f1e8;
+    color: #1a1a1a;
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .font-display { font-family: 'Fraunces', serif; font-optical-sizing: auto; }
+  .display-tight { letter-spacing: -0.02em; line-height: 0.95; }
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' /%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+  .grass-blade-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231f4d3a'/%3E%3Cstop offset='1' stop-color='%230d2a1f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='600' fill='url(%23g)'/%3E%3Cg opacity='0.18' fill='%2384a98c'%3E%3Cpath d='M0,600 Q20,400 30,600 Z'/%3E%3Cpath d='M40,600 Q55,440 70,600 Z'/%3E%3Cpath d='M80,600 Q98,420 115,600 Z'/%3E%3Cpath d='M125,600 Q142,460 158,600 Z'/%3E%3Cpath d='M170,600 Q188,400 205,600 Z'/%3E%3Cpath d='M215,600 Q232,440 250,600 Z'/%3E%3Cpath d='M260,600 Q278,420 295,600 Z'/%3E%3Cpath d='M305,600 Q322,460 340,600 Z'/%3E%3Cpath d='M350,600 Q368,400 385,600 Z'/%3E%3Cpath d='M395,600 Q412,440 430,600 Z'/%3E%3Cpath d='M440,600 Q458,420 475,600 Z'/%3E%3Cpath d='M485,600 Q502,460 520,600 Z'/%3E%3Cpath d='M530,600 Q548,400 565,600 Z'/%3E%3Cpath d='M575,600 Q592,440 610,600 Z'/%3E%3Cpath d='M620,600 Q638,420 655,600 Z'/%3E%3Cpath d='M665,600 Q682,460 700,600 Z'/%3E%3Cpath d='M710,600 Q728,400 745,600 Z'/%3E%3Cpath d='M755,600 Q772,440 790,600 Z'/%3E%3Cpath d='M800,600 Q818,420 835,600 Z'/%3E%3Cpath d='M845,600 Q862,460 880,600 Z'/%3E%3Cpath d='M890,600 Q908,400 925,600 Z'/%3E%3Cpath d='M935,600 Q952,440 970,600 Z'/%3E%3Cpath d='M980,600 Q998,420 1015,600 Z'/%3E%3Cpath d='M1025,600 Q1042,460 1060,600 Z'/%3E%3Cpath d='M1070,600 Q1088,400 1105,600 Z'/%3E%3Cpath d='M1115,600 Q1132,440 1150,600 Z'/%3E%3Cpath d='M1160,600 Q1178,420 1195,600 Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.25s; }
+  .delay-3 { animation-delay: 0.4s; }
+  .delay-4 { animation-delay: 0.55s; }
+  .delay-5 { animation-delay: 0.7s; }
+
+  .marquee {
+    display: flex;
+    gap: 4rem;
+    animation: scroll 40s linear infinite;
+    white-space: nowrap;
+  }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .btn-primary {
+    background: #0d2a1f;
+    color: #f5f1e8;
+    transition: all 0.25s ease;
+  }
+  .btn-primary:hover {
+    background: #1f4d3a;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px -10px rgba(13, 42, 31, 0.4);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: #0d2a1f;
+    border: 1px solid #0d2a1f;
+    transition: all 0.25s ease;
+  }
+  .btn-secondary:hover {
+    background: #0d2a1f;
+    color: #f5f1e8;
+  }
+  .btn-ember {
+    background: #c97f3a;
+    color: #f5f1e8;
+    transition: all 0.25s ease;
+  }
+  .btn-ember:hover {
+    background: #a86932;
+    transform: translateY(-1px);
+  }
+
+  /* Hover card lift */
+  .card-lift { transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.4s; }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -15px rgba(13, 42, 31, 0.15);
+  }
+
+  /* Star */
+  .star { color: #c97f3a; }
+
+  /* Underline accent */
+  .under-italic {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+  }
+  .under-italic::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -2px;
+    height: 1px;
+    background: #c97f3a;
+    opacity: 0.5;
+  }
+
+  /* Section divider */
+  .divider-line {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(13, 42, 31, 0.2), transparent);
+  }
+
+  /* Form */
+  .form-input {
+    background: transparent;
+    border: 1px solid rgba(13, 42, 31, 0.2);
+    color: #0d2a1f;
+    transition: border 0.2s;
+    font-family: 'Instrument Sans', sans-serif;
+  }
+  .form-input:focus {
+    outline: none;
+    border-color: #0d2a1f;
+  }
+  .form-input::placeholder { color: rgba(13, 42, 31, 0.5); }
+  .form-input.dark { color: #f5f1e8; border-color: rgba(245, 241, 232, 0.25); }
+  .form-input.dark::placeholder { color: rgba(245, 241, 232, 0.45); }
+  .form-input.dark:focus { border-color: #f5f1e8; }
+
+  /* Hero scale */
+  .hero-title { font-size: clamp(2.75rem, 7.5vw, 7rem); }
+  .section-title { font-size: clamp(2rem, 4.5vw, 3.75rem); }
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- TOP UTILITY BAR -->
+<div class="bg-ink text-cream text-xs sm:text-sm">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-2.5 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-4 sm:gap-6">
+      <span class="hidden sm:inline-flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-ember inline-block animate-pulse"></span>
+        Same-day delivery available
+      </span>
+      <span class="sm:hidden inline-flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-ember inline-block animate-pulse"></span>
+        Same-day available
+      </span>
+      <span class="hidden md:inline opacity-70">Serving Houston &amp; nearby areas</span>
+    </div>
+    <a href="tel:+13465268963" class="font-medium hover:text-ember transition-colors flex items-center gap-1.5">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (346) 526-8963
+    </a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-cream/85 backdrop-blur-md border-b border-ink/10">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2.5">
+      <!-- Logo mark -->
+      <svg width="32" height="32" viewBox="0 0 32 32" class="text-ink">
+        <circle cx="16" cy="16" r="15" fill="currentColor"/>
+        <g fill="#f5f1e8">
+          <path d="M16 7 L13 16 L16 25 L19 16 Z" opacity="0.95"/>
+          <path d="M10 11 L9 16 L12 22 L14 16 Z" opacity="0.6"/>
+          <path d="M22 11 L23 16 L20 22 L18 16 Z" opacity="0.6"/>
+        </g>
+      </svg>
+      <div class="flex flex-col leading-none">
+        <span class="font-display font-medium text-lg text-ink tracking-tight">Katy Gras Farms</span>
+        <span class="text-[10px] uppercase tracking-[0.18em] text-ink/55 mt-0.5">Houston, TX</span>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-ink/80">
+      <a href="#services" class="hover:text-ink transition-colors">Services</a>
+      <a href="#grass" class="hover:text-ink transition-colors">Grass types</a>
+      <a href="#reviews" class="hover:text-ink transition-colors">Reviews</a>
+      <a href="#area" class="hover:text-ink transition-colors">Area served</a>
+      <a href="#contact" class="hover:text-ink transition-colors">Contact</a>
+    </div>
+    <a href="tel:+13465268963" class="btn-primary px-5 py-2.5 rounded-full text-sm font-medium flex items-center gap-2">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="hidden sm:inline">Call now</span>
+      <span class="sm:hidden">Call</span>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="top" class="relative grain overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-16 sm:pt-24 pb-20 sm:pb-32 relative z-10">
+
+    <!-- Eyebrow -->
+    <div class="fade-up flex items-center gap-3 mb-8">
+      <span class="w-8 h-px bg-copper"></span>
+      <span class="uppercase tracking-[0.22em] text-xs text-ink/70 font-medium">Family-run, owner-operated · Cypress, TX</span>
+    </div>
+
+    <h1 class="fade-up delay-1 font-display font-light text-ink display-tight hero-title max-w-5xl">
+      Fresh-cut sod,<br/>
+      <span class="under-italic">delivered fast.</span><br/>
+      Installed right.
+    </h1>
+
+    <div class="fade-up delay-2 mt-10 sm:mt-14 grid md:grid-cols-12 gap-8 md:gap-12 items-end">
+      <p class="md:col-span-6 text-lg sm:text-xl text-ink/75 leading-relaxed max-w-xl">
+        We deliver and install premium St. Augustine and Zoysia sod across the Houston area —
+        often the same day you call. Family-run, bilingual, and trusted by homeowners and
+        contractors for fresh, healthy grass that takes hold fast.
+      </p>
+
+      <div class="md:col-span-6 flex flex-col sm:flex-row gap-3 md:justify-end">
+        <a href="#quote" class="btn-primary px-7 py-4 rounded-full font-medium text-center inline-flex items-center justify-center gap-2">
+          Get a free quote
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+13465268963" class="btn-secondary px-7 py-4 rounded-full font-medium text-center inline-flex items-center justify-center gap-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (346) 526-8963
+        </a>
+      </div>
+    </div>
+
+    <!-- Trust strip -->
+    <div class="fade-up delay-3 mt-16 sm:mt-24 pt-10 border-t border-ink/15 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+      <div>
+        <div class="flex items-center gap-1 mb-2">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <div class="font-display text-3xl text-ink">5.0</div>
+        <div class="text-sm text-ink/60 mt-1">Across 38 Google reviews</div>
+      </div>
+      <div>
+        <div class="font-display text-3xl text-ink">16 min</div>
+        <div class="text-sm text-ink/60 mt-1">Our fastest call-to-install on record</div>
+      </div>
+      <div>
+        <div class="font-display text-3xl text-ink">Bilingual</div>
+        <div class="text-sm text-ink/60 mt-1">English &amp; Spanish-speaking crews</div>
+      </div>
+      <div>
+        <div class="font-display text-3xl text-ink">Houston</div>
+        <div class="text-sm text-ink/60 mt-1">Cypress, Katy, Spring &amp; nearby</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative grass at bottom of hero -->
+  <div class="absolute bottom-0 left-0 right-0 h-32 sm:h-40 pointer-events-none opacity-20">
+    <svg viewBox="0 0 1200 160" preserveAspectRatio="none" class="w-full h-full">
+      <g fill="#1f4d3a">
+        <path d="M0,160 Q15,90 25,160 Z M30,160 Q42,100 55,160 Z M58,160 Q70,75 82,160 Z M88,160 Q98,110 110,160 Z M118,160 Q132,85 148,160 Z M152,160 Q165,100 178,160 Z M185,160 Q200,75 215,160 Z M222,160 Q235,105 247,160 Z M254,160 Q270,80 286,160 Z M292,160 Q305,110 318,160 Z M325,160 Q340,85 355,160 Z M362,160 Q375,100 388,160 Z M395,160 Q410,75 425,160 Z M432,160 Q445,105 458,160 Z M465,160 Q480,80 495,160 Z M502,160 Q515,110 528,160 Z M535,160 Q550,85 565,160 Z M572,160 Q585,100 598,160 Z M605,160 Q620,75 635,160 Z M642,160 Q655,105 668,160 Z M675,160 Q690,80 705,160 Z M712,160 Q725,110 738,160 Z M745,160 Q760,85 775,160 Z M782,160 Q795,100 808,160 Z M815,160 Q830,75 845,160 Z M852,160 Q865,105 878,160 Z M885,160 Q900,80 915,160 Z M922,160 Q935,110 948,160 Z M955,160 Q970,85 985,160 Z M992,160 Q1005,100 1018,160 Z M1025,160 Q1040,75 1055,160 Z M1062,160 Q1075,105 1088,160 Z M1095,160 Q1110,80 1125,160 Z M1132,160 Q1145,110 1158,160 Z M1165,160 Q1180,85 1195,160 Z"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- MARQUEE BAR -->
+<section class="bg-ink text-cream/90 py-5 overflow-hidden border-y border-cream/10">
+  <div class="marquee font-display italic text-2xl sm:text-3xl">
+    <div class="flex items-center gap-16 shrink-0">
+      <span>St. Augustine</span>
+      <span class="text-copper">✦</span>
+      <span>Zoysia</span>
+      <span class="text-copper">✦</span>
+      <span>Same-day delivery</span>
+      <span class="text-copper">✦</span>
+      <span>Pro installation</span>
+      <span class="text-copper">✦</span>
+      <span>Top soil &amp; prep</span>
+      <span class="text-copper">✦</span>
+      <span>Houston &amp; nearby</span>
+      <span class="text-copper">✦</span>
+    </div>
+    <div class="flex items-center gap-16 shrink-0" aria-hidden="true">
+      <span>St. Augustine</span>
+      <span class="text-copper">✦</span>
+      <span>Zoysia</span>
+      <span class="text-copper">✦</span>
+      <span>Same-day delivery</span>
+      <span class="text-copper">✦</span>
+      <span>Pro installation</span>
+      <span class="text-copper">✦</span>
+      <span>Top soil &amp; prep</span>
+      <span class="text-copper">✦</span>
+      <span>Houston &amp; nearby</span>
+      <span class="text-copper">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-8 h-px bg-copper"></span>
+          <span class="uppercase tracking-[0.22em] text-xs text-ink/70 font-medium">Why Katy Gras</span>
+        </div>
+        <h2 class="font-display font-light section-title text-ink display-tight">
+          We're built for<br/>
+          <span class="under-italic">speed and quality</span> —<br/>
+          not corner-cutting.
+        </h2>
+        <p class="mt-8 text-lg text-ink/70 leading-relaxed max-w-md">
+          Most sod doesn't sit in our yard for days. It's cut, loaded, and rolling
+          toward your address — fresh, healthy, and ready to take root.
+        </p>
+      </div>
+
+      <div class="md:col-span-7 grid sm:grid-cols-2 gap-4">
+        <!-- Card 1 -->
+        <div class="bg-parchment/60 rounded-2xl p-7 border border-ink/10 card-lift">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d2a1f" stroke-width="1.5"><path d="M13 2 L4 14 H12 L11 22 L20 10 H12 L13 2 Z"/></svg>
+          <h3 class="font-display text-xl text-ink mt-5 mb-2">Same-day &amp; next-day</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">Call before noon and there's a good chance your pallets are on the truck the same afternoon. We've even taken Sunday calls.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-parchment/60 rounded-2xl p-7 border border-ink/10 card-lift">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d2a1f" stroke-width="1.5"><path d="M12 2 L4 7 V13 C4 17 8 21 12 22 C16 21 20 17 20 13 V7 Z"/><path d="M9 12 L11 14 L15 10"/></svg>
+          <h3 class="font-display text-xl text-ink mt-5 mb-2">Fresh-cut, every time</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">Sod is harvested fresh for your job — not pre-cut and dried out. That's the difference between grass that takes hold and grass that browns.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-parchment/60 rounded-2xl p-7 border border-ink/10 card-lift">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d2a1f" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20 C3 16 6 14 9 14 C12 14 15 16 15 20"/><path d="M13 20 C13 17 15 16 17 16 C19 16 21 17 21 20"/></svg>
+          <h3 class="font-display text-xl text-ink mt-5 mb-2">Owner-operated, bilingual</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">You talk to the people doing the work. Eliceo, Betsy, and the crew answer the phone — in English or Spanish — and stand behind every pallet they deliver.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-parchment/60 rounded-2xl p-7 border border-ink/10 card-lift">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0d2a1f" stroke-width="1.5"><path d="M3 17 V7 H17 V17 Z"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/><path d="M17 10 H21 L23 13 V17 H17"/></svg>
+          <h3 class="font-display text-xl text-ink mt-5 mb-2">Half pallets to 25+</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">Patching a bald spot? We'll drop a half pallet. Sodding a new build? We've installed 25-pallet jobs in a day. Same care, either way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-line max-w-7xl mx-auto"></div>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-8 h-px bg-copper"></span>
+          <span class="uppercase tracking-[0.22em] text-xs text-ink/70 font-medium">What we do</span>
+        </div>
+        <h2 class="font-display font-light section-title text-ink display-tight max-w-2xl">
+          Sod, delivered and<br/>
+          installed <span class="under-italic">the right way.</span>
+        </h2>
+      </div>
+      <p class="text-ink/70 leading-relaxed max-w-sm">
+        From small patch repairs to multi-pallet new-build installs, our team
+        handles the haul, the prep, and the lay-down so your lawn looks finished
+        the day it's delivered.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+      <article class="group relative bg-ink text-cream rounded-2xl p-8 overflow-hidden card-lift min-h-[300px] flex flex-col justify-between">
+        <div class="absolute -right-10 -bottom-10 opacity-15 transition-transform duration-700 group-hover:scale-110">
+          <svg width="180" height="180" viewBox="0 0 100 100" fill="none" stroke="#84a98c" stroke-width="0.8">
+            <rect x="15" y="40" width="70" height="40" rx="2"/>
+            <line x1="25" y1="40" x2="25" y2="80"/>
+            <line x1="35" y1="40" x2="35" y2="80"/>
+            <line x1="45" y1="40" x2="45" y2="80"/>
+            <line x1="55" y1="40" x2="55" y2="80"/>
+            <line x1="65" y1="40" x2="65" y2="80"/>
+            <line x1="75" y1="40" x2="75" y2="80"/>
+            <line x1="15" y1="50" x2="85" y2="50"/>
+            <line x1="15" y1="60" x2="85" y2="60"/>
+            <line x1="15" y1="70" x2="85" y2="70"/>
+          </svg>
+        </div>
+        <div class="relative">
+          <span class="text-xs text-ember uppercase tracking-[0.18em]">01</span>
+          <h3 class="font-display text-2xl mt-2">Sod delivery</h3>
+          <p class="text-sm text-cream/70 mt-3 leading-relaxed">Fresh pallets dropped right to your driveway. Half pallets through full truckloads.</p>
+        </div>
+        <div class="relative pt-6 mt-4 border-t border-cream/15 text-sm text-cream/80">Most popular →</div>
+      </article>
+
+      <article class="group relative bg-parchment/60 rounded-2xl p-8 border border-ink/10 card-lift min-h-[300px] flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-copper uppercase tracking-[0.18em]">02</span>
+          <h3 class="font-display text-2xl text-ink mt-2">Pro installation</h3>
+          <p class="text-sm text-ink/70 mt-3 leading-relaxed">Our crew lays it tight, level, and ready to root. You'll know it was done right by the way it looks day one.</p>
+        </div>
+        <div class="pt-6 mt-4 border-t border-ink/15 text-sm text-ink/70">Crew of pros →</div>
+      </article>
+
+      <article class="group relative bg-parchment/60 rounded-2xl p-8 border border-ink/10 card-lift min-h-[300px] flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-copper uppercase tracking-[0.18em]">03</span>
+          <h3 class="font-display text-2xl text-ink mt-2">Top soil &amp; prep</h3>
+          <p class="text-sm text-ink/70 mt-3 leading-relaxed">Bare or compacted ground? We bring top soil, grade the surface, and prep it properly before the first roll goes down.</p>
+        </div>
+        <div class="pt-6 mt-4 border-t border-ink/15 text-sm text-ink/70">Done before sod lands →</div>
+      </article>
+
+      <article class="group relative bg-parchment/60 rounded-2xl p-8 border border-ink/10 card-lift min-h-[300px] flex flex-col justify-between">
+        <div>
+          <span class="text-xs text-copper uppercase tracking-[0.18em]">04</span>
+          <h3 class="font-display text-2xl text-ink mt-2">Same-day rush</h3>
+          <p class="text-sm text-ink/70 mt-3 leading-relaxed">Got a job lined up and need pallets today? Call us. We've turned around full installs in the same afternoon.</p>
+        </div>
+        <div class="pt-6 mt-4 border-t border-ink/15 text-sm text-ink/70">Subject to availability →</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- GRASS TYPES -->
+<section id="grass" class="py-20 sm:py-32 bg-ink text-cream relative grain overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+
+    <div class="flex items-center gap-3 mb-6">
+      <span class="w-8 h-px bg-ember"></span>
+      <span class="uppercase tracking-[0.22em] text-xs text-cream/70 font-medium">The grass we carry</span>
+    </div>
+    <h2 class="font-display font-light section-title display-tight max-w-3xl">
+      Two proven Houston grasses.<br/>
+      <span class="font-serif italic text-ember">Cut fresh for your job.</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-16">
+
+      <!-- St. Augustine -->
+      <div class="bg-forest/40 rounded-2xl p-8 sm:p-10 border border-cream/10 backdrop-blur-sm">
+        <div class="aspect-[4/2.5] rounded-xl overflow-hidden mb-6 relative">
+          <svg viewBox="0 0 400 250" class="w-full h-full" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="sa" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3a6b54"/>
+                <stop offset="1" stop-color="#1f4d3a"/>
+              </linearGradient>
+              <pattern id="blades-sa" x="0" y="0" width="14" height="22" patternUnits="userSpaceOnUse">
+                <path d="M2,22 Q3,12 4,22 M6,22 Q7,8 8,22 M10,22 Q11,14 12,22" stroke="#84a98c" stroke-width="0.6" fill="none" opacity="0.7"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="250" fill="url(#sa)"/>
+            <rect width="400" height="250" fill="url(#blades-sa)" opacity="0.85"/>
+            <circle cx="80" cy="60" r="40" fill="#84a98c" opacity="0.08"/>
+            <circle cx="320" cy="180" r="60" fill="#84a98c" opacity="0.06"/>
+          </svg>
+        </div>
+        <div class="flex items-baseline justify-between">
+          <h3 class="font-display text-3xl">St. Augustine</h3>
+          <span class="text-xs uppercase tracking-[0.18em] text-ember">Most popular</span>
+        </div>
+        <p class="text-cream/75 mt-3 leading-relaxed">
+          The Houston classic. Thick, lush, and shade-tolerant — a great fit for most
+          residential yards in this climate. Establishes fast when watered well.
+        </p>
+        <ul class="mt-6 space-y-2 text-sm text-cream/80">
+          <li class="flex items-start gap-2"><span class="text-ember mt-0.5">✦</span> Handles partial shade well</li>
+          <li class="flex items-start gap-2"><span class="text-ember mt-0.5">✦</span> Broad, soft blade texture</li>
+          <li class="flex items-start gap-2"><span class="text-ember mt-0.5">✦</span> Quick to fill in and root</li>
+        </ul>
+      </div>
+
+      <!-- Zoysia -->
+      <div class="bg-forest/40 rounded-2xl p-8 sm:p-10 border border-cream/10 backdrop-blur-sm">
+        <div class="aspect-[4/2.5] rounded-xl overflow-hidden mb-6 relative">
+          <svg viewBox="0 0 400 250" class="w-full h-full" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="zo" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#4a7c5d"/>
+                <stop offset="1" stop-color="#2a5a42"/>
+              </linearGradient>
+              <pattern id="blades-zo" x="0" y="0" width="8" height="18" patternUnits="userSpaceOnUse">
+                <path d="M2,18 L3,4 L4,18 M6,18 L7,6 L7.5,18" stroke="#a3c0a3" stroke-width="0.5" fill="none" opacity="0.85"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="250" fill="url(#zo)"/>
+            <rect width="400" height="250" fill="url(#blades-zo)" opacity="0.9"/>
+            <circle cx="300" cy="80" r="50" fill="#a3c0a3" opacity="0.06"/>
+            <circle cx="100" cy="190" r="40" fill="#a3c0a3" opacity="0.06"/>
+          </svg>
+        </div>
+        <div class="flex items-baseline justify-between">
+          <h3 class="font-display text-3xl">Zoysia</h3>
+          <span class="text-xs uppercase tracking-[0.18em] text-ember">Premium pick</span>
+        </div>
+        <p class="text-cream/75 mt-3 leading-relaxed">
+          Dense, fine-bladed, and remarkably resilient. A favorite for homeowners
+          who want that manicured-lawn look with less water and stronger wear
+          tolerance.
+        </p>
+        <ul class="mt-6 space-y-2 text-sm text-cream/80">
+          <li class="flex items-start gap-2"><span class="text-ember mt-0.5">✦</span> Drought &amp; heat tolerant</li>
+          <li class="flex items-start gap-2"><span class="text-ember mt-0.5">✦</span> Tight, carpet-like feel</li>
+          <li class="flex items-start gap-2"><span class="text-ember mt-0.5">✦</span> Holds up to foot traffic</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="text-center text-cream/60 mt-12 text-sm">
+      Not sure which is right for your yard? <a href="tel:+13465268963" class="text-ember hover:text-cream transition-colors underline-offset-4 hover:underline">Call us</a> and we'll talk you through it.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="flex items-center gap-3 mb-6">
+      <span class="w-8 h-px bg-copper"></span>
+      <span class="uppercase tracking-[0.22em] text-xs text-ink/70 font-medium">How it works</span>
+    </div>
+    <h2 class="font-display font-light section-title text-ink display-tight max-w-2xl">
+      Three steps from <span class="under-italic">call</span> to <span class="under-italic">lush</span>.
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8 sm:gap-12 mt-16 relative">
+
+      <div class="relative">
+        <div class="flex items-baseline gap-4 mb-5">
+          <span class="font-display text-7xl text-copper/30 font-light leading-none">01</span>
+          <div class="h-px flex-1 bg-ink/15 mb-3"></div>
+        </div>
+        <h3 class="font-display text-2xl text-ink mb-3">Call or request a quote</h3>
+        <p class="text-ink/70 leading-relaxed">Tell us your address, the size of the area, and the grass you want. We'll give you a fair, transparent price right then.</p>
+      </div>
+
+      <div class="relative">
+        <div class="flex items-baseline gap-4 mb-5">
+          <span class="font-display text-7xl text-copper/30 font-light leading-none">02</span>
+          <div class="h-px flex-1 bg-ink/15 mb-3"></div>
+        </div>
+        <h3 class="font-display text-2xl text-ink mb-3">We cut and deliver fresh</h3>
+        <p class="text-ink/70 leading-relaxed">Your sod gets harvested fresh and loaded the same day or next. No old pallets sitting around going brown in the sun.</p>
+      </div>
+
+      <div class="relative">
+        <div class="flex items-baseline gap-4 mb-5">
+          <span class="font-display text-7xl text-copper/30 font-light leading-none">03</span>
+          <div class="h-px flex-1 bg-ink/15 mb-3"></div>
+        </div>
+        <h3 class="font-display text-2xl text-ink mb-3">Install &amp; enjoy</h3>
+        <p class="text-ink/70 leading-relaxed">Roll it yourself, or have our crew lay it tight and even. Water it in — and you've got a brand-new lawn before the day is over.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider-line max-w-7xl mx-auto"></div>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-20 sm:py-32 bg-parchment/40">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid md:grid-cols-12 gap-10 items-end mb-14">
+      <div class="md:col-span-7">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-8 h-px bg-copper"></span>
+          <span class="uppercase tracking-[0.22em] text-xs text-ink/70 font-medium">What Houston says</span>
+        </div>
+        <h2 class="font-display font-light section-title text-ink display-tight">
+          38 reviews.<br/>
+          <span class="under-italic">38 five-stars.</span>
+        </h2>
+      </div>
+      <div class="md:col-span-5">
+        <p class="text-ink/70 leading-relaxed">
+          We don't ask. People just tell us — fast service, fair price, fresh
+          grass. The full story is on our Google reviews; here's a taste.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Review 1 -->
+      <figure class="bg-cream rounded-2xl p-7 border border-ink/10 card-lift">
+        <div class="flex items-center gap-1 mb-4">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote class="font-display text-lg text-ink leading-snug">
+          "Delivery and install within <span class="italic">16 minutes</span>. Very professional and great communication. Hard to find good contractors but they impress!"
+        </blockquote>
+        <figcaption class="mt-5 pt-5 border-t border-ink/10 text-sm">
+          <div class="font-medium text-ink">Raymond T.</div>
+          <div class="text-ink/55">via Google · 9 months ago</div>
+        </figcaption>
+      </figure>
+
+      <!-- Review 2 -->
+      <figure class="bg-cream rounded-2xl p-7 border border-ink/10 card-lift">
+        <div class="flex items-center gap-1 mb-4">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote class="font-display text-lg text-ink leading-snug">
+          "Hands down the best deal on grass around. The sod itself is fresh, healthy, and lush. You can tell they take pride in what they deliver."
+        </blockquote>
+        <figcaption class="mt-5 pt-5 border-t border-ink/10 text-sm">
+          <div class="font-medium text-ink">Christopher R.</div>
+          <div class="text-ink/55">via Google · 8 months ago</div>
+        </figcaption>
+      </figure>
+
+      <!-- Review 3 -->
+      <figure class="bg-cream rounded-2xl p-7 border border-ink/10 card-lift">
+        <div class="flex items-center gap-1 mb-4">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote class="font-display text-lg text-ink leading-snug">
+          "Called them up and had a full pallet of sod in my driveway within 2 hours. I called <span class="italic">after business hours</span> and they still answered, took the job, and absolutely delivered."
+        </blockquote>
+        <figcaption class="mt-5 pt-5 border-t border-ink/10 text-sm">
+          <div class="font-medium text-ink">Nathan F.</div>
+          <div class="text-ink/55">via Google · 2 months ago</div>
+        </figcaption>
+      </figure>
+
+      <!-- Review 4 -->
+      <figure class="bg-cream rounded-2xl p-7 border border-ink/10 card-lift">
+        <div class="flex items-center gap-1 mb-4">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote class="font-display text-lg text-ink leading-snug">
+          "Within 2 days, front, side and back yard was complete with top soil and St. Augustine. <span class="italic">15 pallets delivered and installed</span> within a day and a half. Great price."
+        </blockquote>
+        <figcaption class="mt-5 pt-5 border-t border-ink/10 text-sm">
+          <div class="font-medium text-ink">Nathan S.</div>
+          <div class="text-ink/55">via Google · 8 months ago</div>
+        </figcaption>
+      </figure>
+
+      <!-- Review 5 -->
+      <figure class="bg-cream rounded-2xl p-7 border border-ink/10 card-lift">
+        <div class="flex items-center gap-1 mb-4">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote class="font-display text-lg text-ink leading-snug">
+          "After a no-show by another company, Betsy and her team were very helpful and accommodating. They worked me in and did a wonderful job. I would use them again."
+        </blockquote>
+        <figcaption class="mt-5 pt-5 border-t border-ink/10 text-sm">
+          <div class="font-medium text-ink">Nette V.</div>
+          <div class="text-ink/55">via Google · 1 month ago</div>
+        </figcaption>
+      </figure>
+
+      <!-- Review 6 -->
+      <figure class="bg-cream rounded-2xl p-7 border border-ink/10 card-lift">
+        <div class="flex items-center gap-1 mb-4">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote class="font-display text-lg text-ink leading-snug">
+          "They replied right away and even arranged cutting and delivery the same day — <span class="italic">on a Sunday!!</span> The sod is beautiful, fresh and top quality."
+        </blockquote>
+        <figcaption class="mt-5 pt-5 border-t border-ink/10 text-sm">
+          <div class="font-medium text-ink">Desiree M.</div>
+          <div class="text-ink/55">via Google · 7 months ago</div>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="https://www.google.com/search?q=Katy+Gras+Farms+LLC+reviews" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-ink hover:text-copper transition-colors text-sm font-medium">
+        Read all 38 reviews on Google
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AREA SERVED -->
+<section id="area" class="py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+    <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-8 h-px bg-copper"></span>
+          <span class="uppercase tracking-[0.22em] text-xs text-ink/70 font-medium">Where we serve</span>
+        </div>
+        <h2 class="font-display font-light section-title text-ink display-tight">
+          Houston and<br/>
+          <span class="under-italic">nearby areas.</span>
+        </h2>
+        <p class="mt-6 text-ink/70 leading-relaxed">
+          Based in Cypress, TX — we deliver and install across the greater Houston
+          metro area. If your address isn't on the list, give us a call. Odds are
+          we still cover it.
+        </p>
+        <a href="tel:+13465268963" class="inline-flex items-center gap-2 mt-8 text-ink font-medium border-b border-ink pb-1 hover:text-copper hover:border-copper transition-colors">
+          Check coverage — (346) 526-8963
+        </a>
+      </div>
+
+      <div class="md:col-span-7">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 text-ink">
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Cypress</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Katy</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Houston</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Spring</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Tomball</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Magnolia</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> The Woodlands</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Jersey Village</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Hockley</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Waller</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Brookshire</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Fulshear</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Richmond</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> Sugar Land</div>
+          <div class="flex items-center gap-2 py-2 border-b border-ink/10"><span class="text-copper">✦</span> &amp; more</div>
+        </div>
+
+        <div class="mt-10 p-6 bg-parchment/60 rounded-2xl border border-ink/10 flex items-start gap-4">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a86932" stroke-width="1.6" class="shrink-0 mt-0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div class="font-display text-lg text-ink">Our farm</div>
+            <div class="text-sm text-ink/70 mt-1">FM 529, Cypress, TX 77433 — open Wednesday through the weekend</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / QUOTE -->
+<section id="contact" class="py-20 sm:py-32 bg-ink text-cream relative grain overflow-hidden">
+
+  <!-- Decorative grass at top -->
+  <div class="absolute top-0 left-0 right-0 h-24 sm:h-32 pointer-events-none opacity-15">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-full">
+      <g fill="#84a98c" transform="rotate(180 600 60)">
+        <path d="M0,120 Q15,60 25,120 Z M30,120 Q42,70 55,120 Z M58,120 Q70,55 82,120 Z M88,120 Q98,75 110,120 Z M118,120 Q132,60 148,120 Z M152,120 Q165,70 178,120 Z M185,120 Q200,55 215,120 Z M222,120 Q235,75 247,120 Z M254,120 Q270,60 286,120 Z M292,120 Q305,75 318,120 Z M325,120 Q340,60 355,120 Z M362,120 Q375,70 388,120 Z M395,120 Q410,55 425,120 Z M432,120 Q445,75 458,120 Z M465,120 Q480,60 495,120 Z M502,120 Q515,75 528,120 Z M535,120 Q550,60 565,120 Z M572,120 Q585,70 598,120 Z M605,120 Q620,55 635,120 Z M642,120 Q655,75 668,120 Z M675,120 Q690,60 705,120 Z M712,120 Q725,75 738,120 Z M745,120 Q760,60 775,120 Z M782,120 Q795,70 808,120 Z M815,120 Q830,55 845,120 Z M852,120 Q865,75 878,120 Z M885,120 Q900,60 915,120 Z M922,120 Q935,75 948,120 Z M955,120 Q970,60 985,120 Z M992,120 Q1005,70 1018,120 Z M1025,120 Q1040,55 1055,120 Z M1062,120 Q1075,75 1088,120 Z M1095,120 Q1110,60 1125,120 Z M1132,120 Q1145,75 1158,120 Z M1165,120 Q1180,60 1195,120 Z"/>
+      </g>
+    </svg>
+  </div>
+
+  <div id="quote" class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10 pt-12">
+    <div class="grid md:grid-cols-12 gap-10 md:gap-16">
+
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-8 h-px bg-ember"></span>
+          <span class="uppercase tracking-[0.22em] text-xs text-cream/70 font-medium">Get a quote</span>
+        </div>
+        <h2 class="font-display font-light section-title display-tight">
+          Tell us what you<br/>need. We'll handle <span class="under-italic">the rest.</span>
+        </h2>
+        <p class="mt-6 text-cream/70 leading-relaxed">
+          Fastest way to get a quote is to call. If you'd rather send a message,
+          fill the form and we'll get back to you the same day.
+        </p>
+
+        <div class="mt-10 space-y-5">
+          <a href="tel:+13465268963" class="flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center group-hover:bg-ember group-hover:text-ink transition-colors">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-cream/55">Call</div>
+              <div class="font-display text-xl">(346) 526-8963</div>
+            </div>
+          </a>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-cream/55">Visit</div>
+              <div class="font-display text-xl">FM 529, Cypress, TX</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-cream/55">Hours</div>
+              <div class="font-display text-xl">Wed–Sun · 8 AM onward</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <div class="bg-cream/5 backdrop-blur-sm border border-cream/10 rounded-2xl p-7 sm:p-10">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs uppercase tracking-[0.18em] text-cream/60 mb-2">Name</label>
+              <input type="text" class="form-input dark w-full py-3 px-0 border-0 border-b" placeholder="Your full name" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-[0.18em] text-cream/60 mb-2">Phone</label>
+              <input type="tel" class="form-input dark w-full py-3 px-0 border-0 border-b" placeholder="(___) ___-____" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-[0.18em] text-cream/60 mb-2">Service address / area</label>
+              <input type="text" class="form-input dark w-full py-3 px-0 border-0 border-b" placeholder="City or ZIP" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase tracking-[0.18em] text-cream/60 mb-2">Approx. size</label>
+              <input type="text" class="form-input dark w-full py-3 px-0 border-0 border-b" placeholder="Square feet or pallets" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-xs uppercase tracking-[0.18em] text-cream/60 mb-2">What you need</label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
+                <button class="px-4 py-2 rounded-full border border-cream/25 text-sm hover:bg-cream hover:text-ink transition">Delivery only</button>
+                <button class="px-4 py-2 rounded-full border border-cream/25 text-sm hover:bg-cream hover:text-ink transition">Delivery + install</button>
+                <button class="px-4 py-2 rounded-full border border-cream/25 text-sm hover:bg-cream hover:text-ink transition">St. Augustine</button>
+                <button class="px-4 py-2 rounded-full border border-cream/25 text-sm hover:bg-cream hover:text-ink transition">Zoysia</button>
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-xs uppercase tracking-[0.18em] text-cream/60 mb-2">Anything else?</label>
+              <textarea rows="3" class="form-input dark w-full py-3 px-0 border-0 border-b resize-none" placeholder="Timing, access, questions…"></textarea>
+            </div>
+          </div>
+          <button class="btn-ember w-full sm:w-auto mt-8 px-8 py-4 rounded-full font-medium inline-flex items-center justify-center gap-2">
+            Send request
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="text-xs text-cream/45 mt-5">Most messages get a callback within 1 business hour during open days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-cream/75 border-t border-cream/10">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+    <div class="grid md:grid-cols-12 gap-10 mb-12">
+
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-2.5 mb-5">
+          <svg width="32" height="32" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="15" fill="#f5f1e8"/>
+            <g fill="#0d2a1f">
+              <path d="M16 7 L13 16 L16 25 L19 16 Z" opacity="0.95"/>
+              <path d="M10 11 L9 16 L12 22 L14 16 Z" opacity="0.6"/>
+              <path d="M22 11 L23 16 L20 22 L18 16 Z" opacity="0.6"/>
+            </g>
+          </svg>
+          <div class="flex flex-col leading-none">
+            <span class="font-display font-medium text-lg text-cream tracking-tight">Katy Gras Farms</span>
+            <span class="text-[10px] uppercase tracking-[0.18em] text-cream/45 mt-0.5">Houston, TX</span>
+          </div>
+        </div>
+        <p class="text-cream/55 leading-relaxed text-sm max-w-sm">
+          Family-run sod farm based in Cypress, TX. Fresh-cut St. Augustine and
+          Zoysia delivered and installed across the Houston metro.
+        </p>
+      </div>
+
+      <div class="md:col-span-2">
+        <h4 class="font-display text-cream text-base mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#services" class="hover:text-ember transition-colors">Sod delivery</a></li>
+          <li><a href="#services" class="hover:text-ember transition-colors">Pro installation</a></li>
+          <li><a href="#services" class="hover:text-ember transition-colors">Top soil &amp; prep</a></li>
+          <li><a href="#services" class="hover:text-ember transition-colors">Same-day rush</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-2">
+        <h4 class="font-display text-cream text-base mb-4">Grass</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#grass" class="hover:text-ember transition-colors">St. Augustine</a></li>
+          <li><a href="#grass" class="hover:text-ember transition-colors">Zoysia</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="font-display text-cream text-base mb-4">Get in touch</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="tel:+13465268963" class="hover:text-ember transition-colors">(346) 526-8963</a></li>
+          <li>FM 529, Cypress, TX 77433</li>
+          <li>Wed–Sun · 8 AM onward</li>
+          <li class="pt-3"><a href="#quote" class="text-ember hover:text-cream transition-colors font-medium">Request a quote →</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pt-8 border-t border-cream/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-xs text-cream/45">
+      <div>© <span id="year"></span> Katy Gras Farms LLC. All rights reserved.</div>
+      <div>Crafted with care in Houston, TX.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
